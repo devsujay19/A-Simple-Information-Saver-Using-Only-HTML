@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font-Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <hr color="white">
+        <h1>
+            <center>
+                <!-- The Header of the page -->
+                <menu>Information Saver</menu>
+            </center>
+        </h1>
+    </nav>
+    <br>
+    <center>
+        <fieldset>
+            <!-- Label no. 1 -->
+            <menu>Basic Info.</menu>
+        </fieldset>
+        <!-- Name -->
+        <menu><label>Enter name :</label></menu>
+        <menu><input type="text" placeholder="Name..."></menu>
+        <br>
+        <!-- Birth Date -->
+        <menu><label>Enter birth-date :</label></menu>
+        <menu><input type="date" placeholder="Birth-date..."></menu>
+        <br>
+        <!-- Age -->
+        <menu><label>Enter age :</label></menu>
+        <menu><input type="number" placeholder="Age..."></menu>
+        <br>
+        <!-- Address -->
+        <menu><label>Enter address :</label></menu>
+        <menu><input type="text" placeholder="Address..."></menu>
+        <br>
+        <!-- Gender -->
+        <menu><label>Enter gender :</label></menu>
+        <menu><label>Male
+                <input type="checkbox" name="checkbox"</label>
+                <label>Female
+                    <input type="checkbox" name="checkbox"</label>
+                    <label>Transgender
+                        <input type="checkbox" name="checkbox"</label></menu>
+        <br>
+        <fieldset>
+            <!-- Label no. 2 -->
+            <menu>Personal Info.</menu>
+        </fieldset>
+        <!-- Name -->
+        <menu><label>Enter name :</label></menu>
+        <menu><input type="text" placeholder="Repeat your name..."></menu>
+        <br>
+        <!-- Phone Number -->
+        <menu><label>Enter phone number :</label></menu>
+        <menu><input type="number" placeholder="Phone number..."></menu>
+        <br>
+        <!-- eMail Address -->
+        <menu><label>Enter eMail address :</label></menu>
+        <menu><input type="email" placeholder="eMail address..."></menu>
+        <br>
+        <!-- gMail Address -->
+        <menu><label>Enter gMail address :</label></menu>
+        <menu><input type="text" placeholder="gMail address..."></menu>
+        <br>
+        <!-- gMail Password -->
+        <menu><label>Enter gMail password :</label></menu>
+        <menu><input type="password" placeholder="gMail password..."></menu>
+        <br>
+        <fieldset>
+             <!-- Label no. 3 -->
+            <menu>Social Info.</menu>
+        </fieldset>
+        <!-- Google Username -->
+        <menu><label>Enter Google user name :</label></menu>
+        <menu><input type="text" placeholder="Google user name..."></menu>
+        <br>
+        <!-- Facebook Username -->
+        <menu><label>Enter Facebook user name :</label></menu>
+        <menu><input type="text" placeholder="Facebook user name..."></menu>
+        <br>
+        <!-- Google Password -->
+        <menu><label>Enter Google password :</label></menu>
+        <menu><input type="password" placeholder="Google password..."></menu>
+        <br>
+        <!-- Facebook Password -->
+        <menu><label>Enter Facebook password :</label></menu>
+        <menu><input type="password" placeholder="Facebook password..."></menu>
+        <br>
+        <fieldset>
+            <!-- LOabel no. 4 -->
+            <menu>Useless Info.</menu>
+        </fieldset>
+        <!-- Hobbies (Selector) -->
+        <menu><label>Choose a hobby :</label></menu>
+        <menu><select name="hobby" id="hobby">
+            <!-- Option : Sleeping -->
+                <option value="sleeping">Sleeping</option>
+                <!-- Option : Playing -->
+                <option value="playing">Playing</option>
+                <!-- Option : Eating -->
+                <option value="eating">Eating</option>
+                <!-- Option : Hiking -->
+                <option value="hiking">Hiking</option>
+                <!-- Option : Touring -->
+                <option value="touring">Touring</option>
+                <!-- Option : Programming -->
+                <option value="programming">Programming</option>
+            </select></menu>
+        <br>
+        <!-- Favorite Social Media Platforms (Selector) -->
+        <menu><label>Choose a favourite social platform :</label></menu>
+        <menu><select name="social platform" id="social platform">
+            <!-- Option : Facebook -->
+                <option value="facebook">Facebook</option>
+                <!-- Option : Whatsapp -->
+                <option value="whatsapp">Whatsapp</option>
+                <!-- Option : Twitter -->
+                <option value="twitter">Twitter</option>
+                <!-- Option : Discord -->
+                <option value="discord">Discord</option>
+                <!-- Option : LinkedIn -->
+                <option value="linkedin">LinkedIn</option>
+            </select></menu>
+        <br>
+        <menu>
+            <!-- Label no. 5 -->
+            <fieldset>Current Info.</fieldset>
+        </menu>
+        <!-- Time Selection (Selector) -->
+        <menu><label>Enter current time :</label></menu>
+        <menu><input type="time"></menu>
+        <br>
+          <!-- Date Selection (Selector) -->
+        <menu><label>Enter date of today :</label></menu>
+        <menu><input type="date"></menu>
+        <menu>
+            <fieldset>Reset/Save :</fieldset>
+        </menu>
+        <br>
+        <big><big><big><big>
+            <!-- Reset Button -->
+                        <button onclick="myAlert()" type="reset" style="width:30%">Reset</button>
+                        <!-- Save Button -->
+                        <button onclick="myAlert_2()" type="submit" style="width:30%">Save</button>
+                        <small>
+                            <p>Download as P.D.F. :</p>
+                        </small>
+                        <!-- Download Button -->
+                        <button onclick="myAlert_3()" style="width:40%"><i
+                                class="fa fa-download"></i>Download</button></big></big></big></big>
+        </menu>
+    </center>
+    <!-- JavaScript Area -->
+    <script>
+        // Reset Button Alert
+        function myAlert() {
+            alert("Reload to Reset all choosen items.")
+        }
+        // Save Button Alert
+        function myAlert_2() {
+            alert("Saved Successfully!");
+        }
+        // Download Button Alert
+        function myAlert_3() {
+            alert("Downloaded Successfully!")
+        }
+    </script>
+</body>
+
+</html>
